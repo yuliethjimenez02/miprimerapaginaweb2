@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Redmi 10</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <header>
+    <h1 style="font-size:60px;">Xiaomi Redmi 10</h1>
+  </header>
+  <section>
+    <nav>
+      <img src="publicidad.jpg" alt="publicidad" width="300" height="400">
+      <div style="text-align:center" class="w3-topbar w3-bottombar w3-border"></div>
+      <img src="publicidad2.jpg" alt="publicidad" width="300" height="400">
+      <div style="text-align:center" class="w3-topbar w3-bottombar w3-border"></div>
+      <img src="publicidad3.jpg" alt="publicidad" width="300" height="400">
+    </nav>
+    <article>
+      <div style="text-align:center">
+        <h4><b>CARACTERISTICAS PRINCIPALES</b><br></h4>
+      </div>
+      <p style="text-align:left;">Con el XIAOMI Redmi 10 color gris captura tus momentos especiales con su cámara principal con alta resolución de 50MP, junto a 3 cámaras para que no pierdas detalle alguno. Disfruta tus contenidos favoritos en su gran pantalla de 6.5" con resolución FHD+ junto a una tasa de refresco de 90Hz. Cuenta con un procesador MediaTek Helio G88 que te permite usar cualquier aplicación tranquilamente. La batería de 5000 mAh con carga rápida de 18W te permitirá llegar hasta el final del día. Adicional, cuenta con sonido estéreo gracias a sus dos altavoces. ¡Lleva el tuyo!</p>
+      <div class="w3-content w3-section" style="max-width:600px">
+        <img class="mySlides" src="imagen1.jpg" style="width:100%">
+        <img class="mySlides" src="imagen2.jpg" style="width:100%">
+        <img class="mySlides" src="imagen3.jpg" style="width:100%">
+        <img class="mySlides" src="imagen4.jpg" style="width:100%">
+        <img class="mySlides" src="imagen5.jpg" style="width:100%">
+      </div>
+      <div style="text-align:center" class="w3-panel w3-gray">
+       <h4><b>Ficha técnica</b><br></h4>
+      </div>
+      <p style="text-align:left;"><b>DIMENSIONES Y PESO:</b>  161,95 x 75,53 x 8,92 mm y 181 gramos<br> <b>PANTALLA:</b> IPS/LCD de 6,5 pulgadas, Resolución FUllHD+ (2.400 x 1.080 píxeles), 405 ppp, Tasa de refresco de 90 HZ, AdaptiveSync, Gorilla Glass 3.<br>
+      <b>PROCESADOR:</b>  MediaTek Helio G88, GPU ARM Mali-G52 <br> <b>MEMORIA RAM:</b>  4/6 GB LPDDR4x <br> <b>ALMACENAMIENTO INTERNO:</b>  64/128 GB eMMC ampliable con microSD <br>  <b>CÁMARA TRASERA:</b>  50 MP f/1.8, Gran angular 8 MP f/2.2, 120º FOV, Macro 2 MP f/2.4, Profundidad 2 MP f/2.4 <br>
+      <b>CÁMARA DELANTERA:</b>  8 MP f/2.0 <br> <b>BATERÍA:</b>  5.000 mAh, Carga rápida 18W, Carga inversa 9W <br> <b>SISTEMA OPERATIVO:</b>  Android 11 con MIUI 12.5 <br> <b>CONECTIVIDAD:</b>  4G, DualSIM, NFC, Bluetooth 5.1, Radio FM, GPS, Galileo, GLONASS <br> <b>OTROS:</b>  Sensor infrarrojos, Doble altavoz, Jack de 3,5 mm, Lector de huellas lateral, Desbloqueo facial </p>
+      <div style="text-align:center" class="w3-panel w3-gray">  
+       <h4><b>Un motor de gama media</b><br></h4>
+      </div>
+      <div style="text-align:center">
+       <img src="imagen6.jpeg" alt="publicidad" width="500" height="400">
+       <p style="text-align:left;">Si abrimos el capó veremos un procesador MediaTek Helio G88, uno de los más recientes de MediaTek. Fue lanzado el pasado mes de julio y está fabricado en 12 nanómetros. Su GPU es la Mali-G52 y le acompañan 4 o 6 GB de memoria RAM LPDDR4x y 64 o 128 GB de almacenamiento interno eMMC. Son componentes relativamente básicos.
+        A todos ellos les da vida una enorme batería de 5.000 mAh con carga rápida de 18W (cargador de 22,5W incluido en la caja) que, además, tiene carga cableada inversa de 9W (para cargar unos auriculares con la batería del móvil, por ejemplo). El sistema operativo es MIUI 12.5 basado en Android 11, así que sin sorpresas en este aspecto.</p>
+      </div>
+      <div style="text-align:center"> 
+        <video width="420" height="340" controls>
+         <source src="video1.mp4" type="video/mp4">
+         Your browser does not support HTML video.
+        </video>
+      </div>
+    </article>    
+  </section>
+
+  <footer>
+    <p>@pertumildred@gmail.com</p>
+  </footer>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+    
+</body>
+</html>
